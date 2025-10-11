@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishnupriya M — Software Engineer</title>
+  <meta name="description" content="Portfolio of VishnuPriya M — Software Engineer. Projects, skills, and contact." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --card:#f9fafc;
+      --text:#222;
+      --muted:#5f6c7b;
+      --accent:#6c63ff;
+      --accent-light:#ecebff;
+      --radius:14px;
+      --shadow:0 8px 24px rgba(0,0,0,0.08);
+      --max-width:1100px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      display:flex;
+      justify-content:center;
+      padding:40px 20px;
+    }
+
+    .wrap{width:100%;max-width:var(--max-width)}
+
+    header{
+      display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;
+    }
+
+    .brand{display:flex;align-items:center;gap:12px;}
+    .logo{
+      width:56px;height:56px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),#00c4ff);
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-weight:700;font-size:20px;
+      box-shadow:var(--shadow);
+    }
+    .brand h1{font-size:20px;margin:0;}
+    .brand p{font-size:13px;color:var(--muted);margin-top:4px;}
+
+    nav{display:flex;gap:12px;}
+    .btn{
+      text-decoration:none;
+      padding:10px 16px;
+      border-radius:10px;
+      font-weight:600;
+      font-size:14px;
+      border:1px solid #e4e7eb;
+      color:var(--muted);
+      transition:all 0.2s ease;
+    }
+    .btn:hover{background:var(--accent-light);color:var(--accent);}
+    .btn.primary{
+      background:var(--accent);
+      color:white;
+      border:none;
+      box-shadow:var(--shadow);
+    }
+    .btn.primary:hover{background:#5b55ff;}
+
+    main.hero{
+      display:grid;
+      grid-template-columns:1fr 340px;
+      gap:32px;
+    }
+
+    .intro h2{font-size:28px;margin-bottom:12px;}
+    .intro p.lead{color:var(--muted);margin-bottom:20px;}
+
+    .metrics{display:flex;gap:10px;margin-top:10px;}
+    .metric{
+      background:var(--card);
+      padding:12px;
+      border-radius:12px;
+      text-align:center;
+      box-shadow:0 3px 8px rgba(0,0,0,0.05);
+    }
+    .metric strong{display:block;font-size:18px;color:var(--accent);}
+    .metric span{font-size:13px;color:var(--muted);}
+
+    .profile-card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow);
+    }
+
+    .avatar{
+      width:80px;height:80px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),#00c4ff);
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-size:26px;font-weight:700;
+      margin-bottom:10px;
+    }
+
+    .chip{
+      background:var(--accent-light);
+      color:var(--accent);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    section{margin-top:32px;}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow);
+    }
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:10px;}
+    .project{
+      background:white;
+      border-radius:10px;
+      padding:16px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.05);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .project:hover{
+      transform:translateY(-4px);
+      box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    }
+    .project h4{margin-bottom:6px;}
+    .project p{color:var(--muted);font-size:14px;}
+
+    footer{text-align:center;margin-top:40px;color:var(--muted);font-size:13px;}
+
+    @media(max-width:900px){
+      main.hero{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">VP</div>
+        <div>
+          <h1>Vishnupriya M</h1>
+          <p>B.E - Electronics and Communication Engineer</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#Education">Education</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn primary" href="https://drive.google.com/file/d/1p_Mpp4OGR92N49O8KVaZybZI-OLats0U/view?usp=sharing">Resume</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="intro">
+        <h2>Passionate ECE Engineer with a focus on web development and programming.</h2>
+        <p class="lead">I’m a recent Electronics and Communication Engineering graduate with hands-on experience in 
+        <strong>Java, HTML, and CSS</strong>. I enjoy designing clean, responsive websites and building 
+          efficient programs that combine creativity with technical precision.</p>
+      <div class="metrics">
+
+          
+         
+        </div>
+
+        <section id="projects" style="margin-top:24px;">
+          <h3>Projects</h3>
+          <div class="projects">
+            <div class="project">
+              <h4>Automatic Switch Off Charger Using Voltage Doubler</h4>
+              <p>This charger is efficient and prevents accidents by switching off the battery once it's charged a certain threshold levelof 13.2V.</p>
+              <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+                <span class="chip">Voltage Doubler Circuit Components</span><span class="chip">Relay Module</span><span class="chip">PCB & Soldering Kit</span>
+              </div>
+            </div>
+            <div class="project">
+              <h4>Smart Scale Electricity production</h4>
+              <p>Using a horizontal windmill and MPTT charge controller we produce a current with minimum power loss.</p>
+              <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+                <span class="chip">Horizontal Axis Windmill</span><span class="chip">MPPT Charge Controller</span><span class="chip">Digital Tachometer</span>
+              </div>
+            </div>
+            <div class="project">
+              <h4>Intelligent Monitoring System for a Safer Security</h4>
+              <p>IMS leverages advanced technologies like ML, data analytics and it integrates cameras,data sources to provide real time monitoring and predicitive analysis.</p>
+              <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+                <span class="chip">Raspberry Pi</span><span class="chip">Database (MySQL)</span><span class="chip">Motion Sensor & IR Senso</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="profile-card">
+        <div style="display:flex;gap:12px;align-items:center;">
+          <div class="avatar">VP</div>
+          <div>
+            <strong>Vishnu Priya</strong><br/>
+            <span style="font-size:13px;color:var(--muted)">Web Development & Programming</span>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <div style="font-size:13px;color:var(--muted)">Location</div>
+          <div><strong>Thiruvallur, India</strong></div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <div style="font-size:13px;color:var(--muted)">Skills</div>
+          <div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap;">
+            <span class="chip">Java</span><span class="chip">HTML</span><span class="chip">CSS</span>
+            <span class="chip">Python</span><span class="chip">Linux</span>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <a href="https://www.linkedin.com/in/vishnupriya-m-150458311" class="btn primary">LinkedIn</a>
+          <a href="https://github.com/vishnupriya-173" class="btn">GitHub</a>
+        </div>
+      </aside>
+    </main>
+
+    <section id="education" class="card">
+  <h3>Education</h3>
+  <ul style="margin-top:12px; color:var(--muted); padding-left:18px;">
+    <li>
+      <strong>B.E - Electronics and Communication Engineering (upto 6th semester)</strong> — CGPA: 8.44<br>
+      Completed with strong academic performance and hands-on project experience in Embedded Systems and IoT.
+    </li>
+    <li><strong>Higher Secondary Education (12th Grade)</strong> — 88.4%</li>
+    <li><strong>Secondary School Education (10th Grade)</strong> — 84.4%</li>
+  </ul>
+</section>
+
+
+    <section id="contact" class="card">
+  <h3>Contact</h3>
+  <p style="color:var(--muted)">Feel free to reach out by filling out the form below. I’ll get back to you as soon as possible.</p>
+  
+  <form style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
+    <input type="text" name="name" placeholder="Your Name" required 
+           style="padding:10px; border:1px solid var(--border); border-radius:8px; background:var(--background); color:var(--foreground);">
+    
+    <input type="email" name="email" placeholder="Your Email" required 
+           style="padding:10px; border:1px solid var(--border); border-radius:8px; background:var(--background); color:var(--foreground);">
+    
+    <input type="text" name="subject" placeholder="Subject" 
+           style="padding:10px; border:1px solid var(--border); border-radius:8px; background:var(--background); color:var(--foreground);">
+    
+    <textarea name="message" placeholder="Your Message" rows="4" required 
+              style="padding:10px; border:1px solid var(--border); border-radius:8px; background:var(--background); color:var(--foreground); resize:none;"></textarea>
+    
+    <button type="submit" class="btn primary" style="align-self:flex-start;">Send Message</button>
+  </form>
+</section>
+
+
+    <footer>
+      
+    </footer>
+  </div>
+</body>
+</html>
